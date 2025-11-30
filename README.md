@@ -44,4 +44,69 @@ Inspired by platforms like **ChatGPT, Gemini, and Prompt Cowboy**, it provides:
 ### 1️⃣ Clone Repository
 ```bash
 git clone https://github.com/yourusername/prompt-enhancer.git
+```
+```
 cd prompt-enhancer
+```
+
+### 2️⃣ Backend Setup (FastAPI)
+
+- Navigate to backend:
+  
+  ```bash
+  cd prompt-enhancer-backend
+  ```
+  
+- Delete old virtual environment (IMPORTANT)
+  
+  ```bash
+  Remove-Item -Recurse -Force venv
+  ```
+  
+- Create new virtual environment:
+  
+  ```bash
+  python -m venv venv
+  ```
+  
+- Activate venv:
+  
+   ```bash
+  venv\Scripts\activate
+   ```
+  ## Install all dependencies
+  ```bash
+  pip install --upgrade pip
+  ```
+
+  ```bash
+  pip install -r requirements.txt
+  ```
+
+  ### 🔑 Add .env file (required)
+   - Create a .env file inside backend folder:
+
+  ```bash
+  GROQ_API_KEY="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"
+  ```
+
+### ▶ Start backend server
+
+```bash
+uvicorn main:app --reload
+```
+
+### 3️⃣ Frontend Setup (React)
+ - Open a new terminal.
+ - Navigate to:
+   ```bash
+   cd prompt-enhancer-frontend
+   ```
+ - Install dependencies:
+     ```bash
+     npm install
+     ```
+ - Start frontend server:
+     ```bash
+     npm run dev
+     ```
