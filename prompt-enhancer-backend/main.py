@@ -19,7 +19,7 @@ app.add_middleware(
 )
 
 # ---------------------- GROQ CLIENT ----------------------
-client = Groq(api_key=os.getenv("GROQ_API_KEY"))
+client = os.getenv("GROQ_API_KEY")
 
 # ---------------------- INPUT MODEL ----------------------
 class PromptInput(BaseModel):
