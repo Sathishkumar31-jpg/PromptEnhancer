@@ -87,7 +87,7 @@ cd prompt-enhancer
    - Create a .env file inside backend folder:
 
   ```bash
-  GROQ_API_KEY="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"
+  GROQ_API_KEY="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"
   ```
 
 ### ▶ Start backend server
