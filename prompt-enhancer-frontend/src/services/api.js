@@ -16,7 +16,8 @@ const API = axios.create({
   baseURL: "http://localhost:8000",
 });
 
-export const enhancePrompt = async (prompt) => {
+export const enhancePrompt = async (prompt,tone=null) => {
+  const payload = tone ? { prompt, tone } : { prompt };
   const res = await API.post("/enhance", { prompt });
   return res.data.enhanced_prompt;
 };
